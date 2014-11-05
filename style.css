@@ -1,0 +1,104 @@
+a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	line-height: 50px;
+}
+
+@media screen and (min-width: 601px) {
+	body nav {
+		background-color: #0074D9;
+		position: relative;
+		top:30px;
+		left:-10px;
+		width: 110%;
+		height:50px;
+		box-shadow: 0px -1px 2px 1px;
+	}
+
+	body nav ul {
+		padding-left:100px;
+		padding-right: 100px;
+		list-style: none;
+	}
+
+	body nav ul li {
+		top: 0px;
+		display: inline-block;
+		position: relative;
+		-webkit-transition:top 0.5s, height 0.5s;
+		bottom: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	body nav ul li:hover {
+		bottom: 0;
+		top: -20px;
+		height: 70px;
+		background-color: #7FDBFF;
+	}
+
+	body div {
+		height:20px;
+		background-color:#fff;
+		width:100%;
+		position: relative;
+		top:30px;
+	}
+
+	.show-btn {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 601px) {
+	body nav {
+		background-color: #0074D9;
+		position: relative;
+		top:0px;
+		left:-80px;
+		width: 70px;
+		height: 350px;
+		box-shadow: 0px 0px 2px 1px;
+		-webkit-transition: left 2s;
+	}
+
+	body nav:hover {
+		left: -10px;
+	}
+
+	.show-btn {
+		width: 15px;
+		height: 15px;
+		background: url("http://www.iconsmind.com/wp-content/themes/icon/images/svg/icon-menu-black.svg");
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		margin-right: -20px;
+	}
+
+	body nav ul {
+		padding-left:0px;
+		padding-right: 100px;
+		list-style: none;
+	}
+
+	body nav ul li {
+		top: 0px;
+		display: inline-block;
+		position: relative;
+		-webkit-transition:background-color 0.5s;
+		bottom: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 50px;
+	}
+
+	body nav ul li:hover {
+		background-color: #7FDBFF;
+	}
+
+}
+
